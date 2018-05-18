@@ -7,6 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "EGBGovernment.h"
+#import "EGBDoctor.h"
+#import "EGBPensioner.h"
+#import "EGBBusinessman.h"
+
+@interface AppDelegate ()
+@property (strong, nonatomic) EGBGovernment *goverment;
+@end
+
 
 @interface AppDelegate ()
 
@@ -17,8 +26,60 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+        
+    
+    self.goverment = [[EGBGovernment alloc] init];
+    
+    EGBDoctor *doctor1 = [[EGBDoctor alloc] init];
+    
+    EGBPensioner *pensioner1 = [[EGBPensioner alloc] init];
+    
+    EGBBusinessman *businessman1 = [[EGBBusinessman alloc] init];
+
+    doctor1.salary = self.goverment.salary;
+    doctor1.averagePrice = self.goverment.salary;
+    
+    pensioner1.pension = self.goverment.pension;
+    pensioner1.averagePrice = self.goverment.averagePrice;
+    
+    businessman1.taxLevel = self.goverment.taxLevel;
+    businessman1.averagePrice = self.goverment.averagePrice;
+    
+    self.goverment.taxLevel = 1;
+    self.goverment.taxLevel = 4;
+    self.goverment.taxLevel = 3;
+    NSLog(@" ");
+    self.goverment.salary = 900;
+    self.goverment.salary = 1250;
+    self.goverment.salary = 1150;
+    self.goverment.salary = 1200;
+    NSLog(@" ");
+    self.goverment.pension = 550;
+    self.goverment.pension = 500;
+    self.goverment.pension = 600;
+    NSLog(@" ");
+    self.goverment.averagePrice = 10;
+    self.goverment.averagePrice = 15;
+    self.goverment.averagePrice = 5;
+    
+    
+ 
+    
     return YES;
 }
+
+- (void) govermentNotification:(NSNotification*) notification {
+    
+    NSLog(@"govermentNotification userInfo = %@", notification.userInfo);
+    
+}
+
+
+- (void) dealloc {
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

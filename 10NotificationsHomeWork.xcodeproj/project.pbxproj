@@ -13,6 +13,10 @@
 		2C5DAD1C20A4975000562DD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5DAD1B20A4975000562DD1 /* Assets.xcassets */; };
 		2C5DAD1F20A4975000562DD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C5DAD1D20A4975000562DD1 /* LaunchScreen.storyboard */; };
 		2C5DAD2220A4975000562DD1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DAD2120A4975000562DD1 /* main.m */; };
+		2C5DAD3220A4979200562DD1 /* EGBGovernment.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DAD2E20A4979100562DD1 /* EGBGovernment.m */; };
+		2C5DAD3320A4979200562DD1 /* EGBDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DAD3020A4979100562DD1 /* EGBDoctor.m */; };
+		2C5DAD3620A6226000562DD1 /* EGBPensioner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DAD3520A6226000562DD1 /* EGBPensioner.m */; };
+		2C5DAD3920A6229600562DD1 /* EGBBusinessman.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C5DAD3820A6229600562DD1 /* EGBBusinessman.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		2C5DAD1E20A4975000562DD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C5DAD2020A4975000562DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C5DAD2120A4975000562DD1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C5DAD2E20A4979100562DD1 /* EGBGovernment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGBGovernment.m; sourceTree = "<group>"; };
+		2C5DAD2F20A4979100562DD1 /* EGBDoctor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGBDoctor.h; sourceTree = "<group>"; };
+		2C5DAD3020A4979100562DD1 /* EGBDoctor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGBDoctor.m; sourceTree = "<group>"; };
+		2C5DAD3120A4979200562DD1 /* EGBGovernment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGBGovernment.h; sourceTree = "<group>"; };
+		2C5DAD3420A6226000562DD1 /* EGBPensioner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGBPensioner.h; sourceTree = "<group>"; };
+		2C5DAD3520A6226000562DD1 /* EGBPensioner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGBPensioner.m; sourceTree = "<group>"; };
+		2C5DAD3720A6229600562DD1 /* EGBBusinessman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EGBBusinessman.h; sourceTree = "<group>"; };
+		2C5DAD3820A6229600562DD1 /* EGBBusinessman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGBBusinessman.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +72,14 @@
 			children = (
 				2C5DAD1220A4974F00562DD1 /* AppDelegate.h */,
 				2C5DAD1320A4974F00562DD1 /* AppDelegate.m */,
+				2C5DAD3420A6226000562DD1 /* EGBPensioner.h */,
+				2C5DAD3520A6226000562DD1 /* EGBPensioner.m */,
+				2C5DAD3720A6229600562DD1 /* EGBBusinessman.h */,
+				2C5DAD3820A6229600562DD1 /* EGBBusinessman.m */,
+				2C5DAD3120A4979200562DD1 /* EGBGovernment.h */,
+				2C5DAD2E20A4979100562DD1 /* EGBGovernment.m */,
+				2C5DAD2F20A4979100562DD1 /* EGBDoctor.h */,
+				2C5DAD3020A4979100562DD1 /* EGBDoctor.m */,
 				2C5DAD1520A4974F00562DD1 /* ViewController.h */,
 				2C5DAD1620A4974F00562DD1 /* ViewController.m */,
 				2C5DAD1820A4974F00562DD1 /* Main.storyboard */,
@@ -142,7 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C5DAD1720A4974F00562DD1 /* ViewController.m in Sources */,
+				2C5DAD3320A4979200562DD1 /* EGBDoctor.m in Sources */,
+				2C5DAD3920A6229600562DD1 /* EGBBusinessman.m in Sources */,
 				2C5DAD2220A4975000562DD1 /* main.m in Sources */,
+				2C5DAD3220A4979200562DD1 /* EGBGovernment.m in Sources */,
+				2C5DAD3620A6226000562DD1 /* EGBPensioner.m in Sources */,
 				2C5DAD1420A4974F00562DD1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
